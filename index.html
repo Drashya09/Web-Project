@@ -1,0 +1,140 @@
+<html>
+<head>
+	<title>Web Project</title>
+	<style type="text/css">
+		img
+		{
+			border: 1px solid #ddd;
+			border-radius: 4px;
+			padding: 5px;
+			width: 500px;
+			margin-left: 15%;
+		}
+	</style>
+</head>
+<body bgcolor="#59B0AD">
+<script>
+function onSubmit()
+{
+	alert("You have submitted the form successfully!");
+}
+function guessNumber()
+{
+	const random=Math.floor(Math.random()*10+1);
+	let number=parseInt(prompt("Guess a number from 1 to 10!"));
+	while(number!==random)
+	{
+		number=parseInt(prompt("Sorry!You guessed a wrong number.TRY AGAIN!!"));
+	}
+	if(number==random)
+	{
+		alert("WINNER!! You guessed the correct number.");
+	}
+}
+</script>
+<table width="100%" border="0" bgcolor="black">
+	<tr>
+		<td><font color="white"><h1><B><u>NAME</u> : Drashya Jain</B></h1></font></td>
+	</tr>
+	<tr>
+		<td><font color="white"><h1><B><u>REG. NO.</u> : 20BCE10806</B></h1></font></td>
+	</tr>
+</table>
+<br>
+<form name="employment">
+<table width="800" border="1" cellspacing="2" cellpadding="2" bgcolor="pink" align="center">
+	<tr>
+		<th colspan="2"><style="color:white;">EMPLOYMENT APPLICATION FORM</th>
+	</tr>
+	<tr>
+		<td>First Name</td>
+		<td>
+			<input type="text" name="fname" maxlength="50" />
+		</td>
+	</tr>
+	<tr>
+		<td>Last Name</td>
+		<td>
+			<input type="text" name="lname" maxlength="50" />
+		</td>
+	</tr>
+	<tr>
+		<td>Email Id</td>
+		<td>
+			<input type="text" name="email" maxlength="70" />
+		</td>
+	</tr>
+	<tr>
+		<td>Position</td>
+		<td>
+			<select name="position">
+				<option value="AC">Accountant</option>
+				<option value="RE">Receptionist</option>
+				<option value="AD">Administratot</option>
+				<option value="SU">Supervisor</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>Experience Level</td>
+		<td>
+			<select name="experience">
+				<option value="EL">Entry Level</option>
+				<option value="SE">Some Experience</option>
+				<option value="VE">Very Experienced<option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>Job Type</td>
+		<td>
+			<input type="checkbox" name="ft" />Full-Time
+			<input type="checkbox" name="pt" />Part-Time
+			<input type="checkbox" name="ct" />Contact
+		</td>
+	</tr>
+	<tr>
+		<td>Employment Status</td>
+		<td>
+			<input type="radio" name="estatus" value="employed" />Employed
+			<input type="radio" name="estatus" value="unemployed" />Unemployed
+			<input type="radio" name="estatus" value="student" />Student
+		</td>
+	</tr>
+	<tr>
+		<td>Password</td>
+		<td>
+			<input type="password" name="password" maxlength="50" />
+		</td>
+	</tr>
+	<tr>
+		<td>Additional Comments</td>
+		<td>
+			<textarea name="comments" cols="45" rows="5">
+			</textarea>
+		</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>
+			<input type="submit" name="submit" value="Submit" onclick="onSubmit()" />
+			<input type="reset" name="reset" value="Reset" />
+		</td>
+	</tr>
+</table>
+</form>
+<hr>
+<br>
+<img src="number.png" align="left">
+<BR CLEAR="center">
+<center><h1 style="margin-right: 15%;"><B><u>GAME<br></u></B></h1></center>
+<center><h1 style="margin-right: 15%;"><B><u>GUESS THE NUMBER!!<br></u></B></h1></center>
+<center style="margin-right: 15%;"><button onclick="guessNumber()">Click here to start</button></center>
+<br />
+<table width="100%" height="60" border="0" cellspacing="5" cellpadding="5" bgcolor="black">
+	<tr>
+		<td align="center"></td>
+	</tr>
+</table>
+</body>
+</html>
